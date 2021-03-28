@@ -23,3 +23,12 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
+## Using Docker
+
+Use `docker-compose` config files to start.
+
+1. To run only the additional services
+    ```
+    docker-compose up -d --build
+    ```
