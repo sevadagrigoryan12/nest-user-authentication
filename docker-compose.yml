@@ -1,0 +1,15 @@
+version: '3.6'
+
+services:
+  ms:
+    build:
+     context: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    volumes:
+      - ./src:/usr/app/src
+    logging:
+      options:
+        tag: "main_instance"
